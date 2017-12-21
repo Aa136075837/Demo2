@@ -22,6 +22,7 @@ public class IntervalActivity extends AppCompatActivity {
     private Button mBtn;
     private TextView mTextView;
     private final CompositeDisposable mCompositeDisposable = new CompositeDisposable();
+    private TextView mDescTv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +31,8 @@ public class IntervalActivity extends AppCompatActivity {
 
         mBtn = (Button) findViewById(R.id.interval_btn_1);
         mTextView = (TextView) findViewById(R.id.interval_text_1);
+        mDescTv = (TextView) findViewById(R.id.interval_desc);
+        mDescTv.setText("interval : 每隔一段事件就发送一次事件，并且发送的值会递增");
         mBtn.setOnClickListener(v -> work());
     }
 

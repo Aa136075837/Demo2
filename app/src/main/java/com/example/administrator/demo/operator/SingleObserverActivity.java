@@ -24,6 +24,8 @@ public class SingleObserverActivity extends AppCompatActivity {
         setContentView(R.layout.activity_single_observer);
         mBtn = (Button) findViewById(R.id.single_btn_1);
         mTv = (TextView) findViewById(R.id.single_text_1);
+        ((TextView) findViewById(R.id.single_desc)).setText("SingleObserver属于Observer的一种，它和普通Observer的不同，" +
+            "在于其回调方法，它没有onNext(T t)方法，而是只有onSuccess(T t)方法。");
         mBtn.setOnClickListener(v -> work());
     }
 
@@ -35,7 +37,7 @@ public class SingleObserverActivity extends AppCompatActivity {
         return new SingleObserver<String>() {
             @Override
             public void onSubscribe(Disposable d) {
-                mTv.append(d.isDisposed()+"");
+                mTv.append(d.isDisposed() + "");
                 mTv.append(AppConstant.NEW_LINE);
             }
 

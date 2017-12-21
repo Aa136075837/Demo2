@@ -25,6 +25,7 @@ public class MapActivity extends AppCompatActivity {
 
     private Button mBtn1;
     private TextView mTv1;
+    private TextView mDescTv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +33,8 @@ public class MapActivity extends AppCompatActivity {
         setContentView(R.layout.activity_map);
         mBtn1 = (Button) findViewById(R.id.map_btn_1);
         mTv1 = (TextView) findViewById(R.id.map_text_1);
+        mDescTv = (TextView) findViewById(R.id.map_desc);
+        mDescTv.setText("map : 将一个类型的被订阅者的数据传给另一个类型的订阅者 。 自己定义转换规则");
         mBtn1.setOnClickListener(v -> work());
     }
 

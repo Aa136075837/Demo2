@@ -1,33 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.administrator.demo.operator.TimerActivity">
+    tools:context="com.example.administrator.demo.operator.PublishSubjectActivity">
 
     <TextView
-        android:id="@+id/timer_text_1"
+        android:id="@+id/publish_subject_text_1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:padding="5dp" />
 
     <Button
-        android:id="@+id/timer_btn_1"
+        android:id="@+id/publish_subject_btn_1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="take" />
+        android:text="doSome" />
 
     <View
         android:layout_width="match_parent"
         android:layout_height="5dp"
         android:background="@drawable/bg_text" />
+
     <TextView
-        android:id="@+id/timer_desc"
+        android:id="@+id/publish_subject_desc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
-
 </LinearLayout>

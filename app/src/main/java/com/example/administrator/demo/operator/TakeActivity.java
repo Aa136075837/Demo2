@@ -28,6 +28,7 @@ public class TakeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_take);
         mBtn1 = (Button) findViewById(R.id.take_btn_1);
         mTv1 = (TextView) findViewById(R.id.take_text_1);
+        ((TextView)findViewById(R.id.take_desc)).setText(" take : 只发送前 n 个事件");
         mBtn1.setOnClickListener(v -> work1());
     }
 
@@ -57,7 +58,7 @@ public class TakeActivity extends AppCompatActivity {
     private void work() {
         mTv1.setText("");
         /**
-         * take : 只发送前 n 个
+         * take : 只发送前 n 个事件
          */
         Observable.just(1, 2, 3, 4, 5, 6).subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread()).take(3).subscribe(getObserver());

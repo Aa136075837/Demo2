@@ -4,28 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.example.administrator.demo.operator.RxActivity">
+    tools:context="com.example.administrator.demo.operator.ConcatActivity"
+    android:orientation="vertical">
 
     <TextView
-        android:id="@+id/rx_test_tv"
+        android:id="@+id/concat_text_1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:padding="5dp"
-        android:textColor="@color/colorAccent" />
+        android:padding="5dp" />
 
     <Button
-        android:id="@+id/start_time"
+        android:id="@+id/concat_btn_1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="开启耗时操作"
-        android:textColor="@color/colorAccent" />
-
-    <TextView
-        android:id="@+id/rx_desc1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:text="concat" />
 
     <View
         android:layout_width="match_parent"
@@ -33,20 +26,35 @@
         android:background="@drawable/bg_text" />
 
     <TextView
-        android:id="@+id/text_2"
+        android:id="@+id/concat_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@drawable/bg_text" />
+
+    <TextView
+        android:id="@+id/concat_text_2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:padding="5dp" />
 
     <Button
-        android:id="@+id/btn_2"
+        android:id="@+id/concat_btn_2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="doSome" />
+        android:text="merge" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@drawable/bg_text" />
 
     <TextView
-        android:id="@+id/rx_desc2"
+        android:id="@+id/concat_desc2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 

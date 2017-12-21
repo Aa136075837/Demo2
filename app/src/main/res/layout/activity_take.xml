@@ -25,4 +25,9 @@
         android:layout_height="5dp"
         android:background="@drawable/bg_text" />
 
+    <TextView
+        android:id="@+id/take_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
 </LinearLayout>

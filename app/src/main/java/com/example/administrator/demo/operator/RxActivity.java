@@ -36,6 +36,8 @@ public class RxActivity extends AppCompatActivity {
         mBtn = (Button) findViewById(R.id.start_time);
         mText2 = (TextView) findViewById(R.id.text_2);
         mBtn2 = (Button) findViewById(R.id.btn_2);
+        ((TextView)findViewById(R.id.rx_desc1)).setText("线程调度 subscribeOn(Schedulers.io())  observeOn(AndroidSchedulers.mainThread()）");
+        ((TextView)findViewById(R.id.rx_desc2)).setText("just : 被订阅者依次发射数据（item1，item2 ，....）");
         initEvent();
     }
 

@@ -29,6 +29,7 @@ public class TimerActivity extends AppCompatActivity {
         setContentView(R.layout.activity_timer);
         mBtn1 = (Button) findViewById(R.id.timer_btn_1);
         mTv1 = (TextView) findViewById(R.id.timer_text_1);
+        ((TextView)findViewById(R.id.timer_desc)).setText(" timer : 返回一个 n 秒后发送唯一事件的 Observable . 即使没有发送任何数据也会发送一个默认值。");
         mBtn1.setOnClickListener(v -> work());
     }
 

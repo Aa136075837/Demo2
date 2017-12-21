@@ -32,6 +32,7 @@ public class ZipActivity extends AppCompatActivity {
         setContentView(R.layout.activity_zip);
         mBtn1 = (Button) findViewById(R.id.zip_btn_1);
         mTv1 = (TextView) findViewById(R.id.zip_text_1);
+        ((TextView)findViewById(R.id.zip_desc)).setText("zip : 将n个不同类型的被订阅者通过自定义方法合并成一个新的被订阅者，发送给订阅者");
         mBtn1.setOnClickListener(v -> work());
     }
 

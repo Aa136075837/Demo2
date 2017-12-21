@@ -34,6 +34,7 @@ public class DisposablesActivity extends AppCompatActivity {
         setContentView(R.layout.activity_disposables);
         mBtn1 = (Button) findViewById(R.id.disposable_btn_1);
         mTv1 = (TextView) findViewById(R.id.disposable_text_1);
+        ((TextView)findViewById(R.id.disposable_desc)).setText(" CompositeDisposable : ");
         mBtn1.setOnClickListener(v -> work());
     }
 
