@@ -35,7 +35,7 @@
         <activity android:name=".operator.IntervalActivity" />
         <activity android:name=".operator.SingleObserverActivity" />
         <activity android:name=".SeekBarActivity" />
-        <activity android:name=".NavigationActivity"/>
+        <activity android:name=".NavigationActivity" />
         <activity android:name=".operator.ReduceActivity" />
         <activity android:name=".operator.BufferActivity" />
         <activity android:name=".operator.FilterActivity" />
@@ -50,7 +50,8 @@
         <activity android:name=".operator.PublishSubjectActivity" />
         <activity android:name=".operator.BehaviorSubjectActivity" />
         <activity android:name=".operator.AsyncSubjectActivity" />
-        <activity android:name=".operator.ThrottleFirstActivity"/>
+        <activity android:name=".operator.ThrottleFirstActivity" />
+        <activity android:name=".RasActivity"></activity>
     </application>
 
 </manifest>

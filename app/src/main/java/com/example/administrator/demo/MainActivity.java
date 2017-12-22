@@ -18,6 +18,7 @@ import com.example.administrator.demo.bean.MyAppInfo;
 import com.example.administrator.demo.bean.PhoneNumberBean;
 import com.example.administrator.demo.utils.ApkTool;
 
+import java.security.KeyPairGenerator;
 import java.util.List;
 
 import pub.devrel.easypermissions.EasyPermissions;
@@ -87,6 +88,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void toSeekBar(View view) {
         Intent intent = new Intent(this, SeekBarActivity.class);
+        startActivity(intent);
+    }
+
+    public void toRas(View view) {
+        Intent intent = new Intent(this, RasActivity.class);
         startActivity(intent);
     }
 }
