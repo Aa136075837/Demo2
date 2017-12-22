@@ -44,7 +44,7 @@ public class SeekBarActivity extends AppCompatActivity {
         mText = (TextView) findViewById(R.id.current_progress);
         mSeekbar1 = (SeekBar) findViewById(R.id.seek_bar_1);
         mSeekBar2 = (SeekBar) findViewById(R.id.seek_bar_2);
-//        initEvent();
+        initEvent();
         initEvent1();
     }
 

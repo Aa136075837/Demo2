@@ -2,6 +2,7 @@ package com.example.administrator.demo;
 
 import android.Manifest;
 import android.content.ContentResolver;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.net.Uri;
@@ -11,6 +12,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.SeekBar;
 
 import com.example.administrator.demo.bean.MyAppInfo;
 import com.example.administrator.demo.bean.PhoneNumberBean;
@@ -68,8 +70,23 @@ public class MainActivity extends AppCompatActivity {
     public void getAppContent() {
         PackageManager pm = getPackageManager();
         List<MyAppInfo> myAppInfos = ApkTool.scanLocalInstallAppList(pm);
-        for (MyAppInfo info : myAppInfos ) {
+        for (MyAppInfo info : myAppInfos) {
             Log.e("myAppInfos", info.getAppName());
         }
+    }
+
+    public void toCertIdCart(View view) {
+        Intent intent = new Intent(this, APPActivity.class);
+        startActivity(intent);
+    }
+
+    public void toNavigation(View view) {
+        Intent intent = new Intent(this, NavigationActivity.class);
+        startActivity(intent);
+    }
+
+    public void toSeekBar(View view) {
+        Intent intent = new Intent(this, SeekBarActivity.class);
+        startActivity(intent);
     }
 }
